@@ -23,6 +23,7 @@
 }
   
 .navbar__link {
+    padding: 15px 70px 15px 15px;
     text-decoration: none;
     color: rgb(0, 112, 156);
 }
