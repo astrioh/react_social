@@ -1,0 +1,9 @@
+.profile {
+    grid-area: content;
+  }
+  
+.profile__bgImage {
+    height: 280px;
+    display: block;
+    margin: 0 auto;
+  }
