@@ -9,7 +9,7 @@ function App() {
     <div className="app-wrapper">
       <Header />
       <Navbar />
-      <Profile />
+      <Profile name="Ilya Butskikh" dateOfBirth="19.02.2001" city="Yaroslavl'" education="YSTU" contacts="+79159732069" />
     </div>
   );
 }
