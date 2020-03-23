@@ -4,7 +4,7 @@
     border-radius: 5px;
   }
   
-.header img {
+.header__logo {
     width: 60px;
     display: block;
     margin-left: 25px;
