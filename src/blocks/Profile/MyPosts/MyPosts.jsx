@@ -13,9 +13,9 @@ const MyPosts = () => {
             </div>
         
             <div className={s.profile__posts}>
-                <Post text='1' />
-                <Post text='2' />
-                <Post text='3' />
+                <Post text='Hi! How are you?' />
+                <Post text='Anyone wanna hang out?' />
+                <Post text='Registered just now. Where do I click?' />
             </div>
         </div>
     );
