@@ -32,4 +32,8 @@
     text-decoration: underline;
     color: rgb(4, 60, 245);
 }
-  
+
+.navbar__link.active {
+    color: darkcyan;
+    font-weight: 500;
+}
