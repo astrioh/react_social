@@ -1,7 +1,11 @@
 .post {
-    width: 95%;
-    padding: 15px 20px;
-    background-color: rgb(245, 245, 245);
-    border-radius: 5px;
     margin-top: 15px;
+    padding: 8px 20px 8px 15px;
+    border-radius: 5px;
+    background-color: rgb(245, 245, 245);
+}
+
+.post__text {
+    display: block;
+    margin-bottom: 10px;
 }
