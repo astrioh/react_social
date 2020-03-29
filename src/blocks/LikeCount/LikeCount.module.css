@@ -1,0 +1,20 @@
+.likeCount {
+    justify-content: space-around;
+    width: 50px;
+    display: flex;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+
+.likeCount__like {
+    color: rgb(137, 164, 255);
+    text-decoration: none;
+}
+.likeCount:hover {
+    cursor: pointer;
+}
+
+.likeCount:hover .likeCount__like {
+    cursor: pointer;
+    color: red;
+}
