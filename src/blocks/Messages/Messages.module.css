@@ -3,6 +3,20 @@
     border-radius: 5px;
     background-color: rgb(245, 245, 245);
     display: grid;
+    grid-template: 
+    "n t"
+    "f sendInput";
     grid-template-columns: 2fr 10fr;
-    grid-gap: 70px;
+    grid-gap: 10px 70px;
+}
+
+.messages__names {
+    grid-area: n;
+}
+
+.messages__text {
+    grid-area: t;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid rgb(78, 197, 245);
 }

@@ -1,5 +1,6 @@
 .dialogName {
-    padding: 25px;
+    padding: 10px;
+    width: 100%;
     margin-bottom: 10px;
     border-bottom: 1px solid rgb(185, 185, 185);
 }
@@ -12,4 +13,15 @@
 .dialogName a.active {
     color: deepskyblue;
     font-weight: 500;
+}
+
+.dialogName__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dialogName__profileImg {
+    width: 50px;
+    border-radius: 50%;
 }
