@@ -16,7 +16,7 @@ const MyPosts = (props) => {
         <div className={s.myPosts} >
             <div className={s.myPosts__title}>My posts</div>
             <div>
-                <PostInput />
+                <PostInput dispatch={props.dispatch} newPostText={props.newPostText} />
             </div>
         
             <div className={s.profile__posts}>

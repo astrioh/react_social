@@ -3,7 +3,6 @@ import s from './ProfileInfo.module.css';
 
 const ProfileInfo = props => {
     let { name, dateOfBirth, city, education, contacts, avatarLink, bgImage } = props.profileData[props.id];
-    console.log(props.profileData);
     return (
         <div className={s.profileInfo}>
             <img
