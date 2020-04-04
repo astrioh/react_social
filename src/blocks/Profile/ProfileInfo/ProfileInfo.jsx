@@ -2,7 +2,7 @@ import React from 'react';
 import s from './ProfileInfo.module.css';
 
 const ProfileInfo = props => {
-    let { name, dateOfBirth, city, education, contacts, avatarLink, bgImage } = props.profileData[props.id];
+    let { name, dateOfBirth, city, education, contacts, avatarLink, bgImage } = props.profileData;
     return (
         <div className={s.profileInfo}>
             <img
