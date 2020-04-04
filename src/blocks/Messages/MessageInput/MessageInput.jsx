@@ -1,20 +1,17 @@
 import React from 'react';
 import Button from '../../Button/Button';
 import s from './MessageInput.module.css';
-import { sendMessageActionCreator, messageTextChangedActionCreator } from '../../../redux/messageReducer'
-
 
 const MessageInput = (props) => {
-
-    const messageTextChangeHandler = e => {
+    const updateMessageText = e => {
         let text = e.target.value;
-        props.dispatch(messageTextChangedActionCreator(text));
-    };
+        props.messageTextChangeHandler(text);
+    }
 
     return (
         <div className={s.messageInput}>
-            <textarea onChange={messageTextChangeHandler} value={props.newMessageText} placeholder='Write a message...' className={s.messageInput__input} name="message" cols="100" rows="2"></textarea>
-            <Button clickFunction={props.dispatch.bind(null, sendMessageActionCreator())} text='Send message' />
+            <textarea onChange={updateMessageText} value={props.newMessageText} placeholder='Write a message...' className={s.messageInput__input} name="message" cols="100" rows="2"></textarea>
+            <Button clickFunction={props.sendMessageHandler} text='Send message' />
         </div>
     );
 }

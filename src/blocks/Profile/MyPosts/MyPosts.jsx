@@ -1,7 +1,7 @@
 import React from 'react';
 import Post from './Post/Post';
 import s from './MyPosts.module.css';
-import PostInput from './PostInput/PostInput';
+import PostInputContainer from './PostInput/PostInputContainer';
 
 const MyPosts = (props) => {
     /* let postData = [
@@ -16,7 +16,7 @@ const MyPosts = (props) => {
         <div className={s.myPosts} >
             <div className={s.myPosts__title}>My posts</div>
             <div>
-                <PostInput dispatch={props.dispatch} newPostText={props.newPostText} />
+                <PostInputContainer dispatch={props.dispatch} newPostText={props.newPostText} />
             </div>
         
             <div className={s.profile__posts}>

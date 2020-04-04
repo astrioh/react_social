@@ -2,7 +2,7 @@ import React from 'react';
 import s from './Messages.module.css';
 import DialogName from './DialogName/DialogName';
 import Message from './Message/Message';
-import MessageInput from './MessageInput/MessageInput';
+import MessageInputContainer from './MessageInput/MessageInputContainer';
 
 const Messages = (props) => {
 
@@ -16,7 +16,7 @@ const Messages = (props) => {
             <div className={s.messages__text}>
                 {messageElements}
             </div>
-            <MessageInput newMessageText={props.messagePageData.newMessageText} dispatch={props.dispatch} />
+            <MessageInputContainer newMessageText={props.messagePageData.newMessageText} dispatch={props.dispatch} />
         </div>
     );
 }
