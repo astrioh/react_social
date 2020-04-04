@@ -18,11 +18,7 @@ let initialState = {
         postData: [
             { id: 1, text: 'Hi! How are you?', likes: 2 },
             { id: 2, text: 'Anyone wanna hang out?', likes: 4 },
-            {
-                id: 3,
-                text: 'Registered just now. Where do I click?',
-                likes: 1
-            }
+            { id: 3, text: 'Registered just now. Where do I click?', likes: 1 }
         ],
         newPostText: ''
 };
@@ -30,27 +26,26 @@ let initialState = {
 const profileReducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_POST: {
-            let id = state.postData.length;
+            let stateCopy = {...state};
+            let id = stateCopy.postData.length;
 
             let newPost = {
                 id: ++id,
-                text: state.newPostText,
+                text: stateCopy.newPostText,
                 likes: 0
             };
-
-            state.postData.push(newPost);
-            state.newPostText = '';
-            break;
+            stateCopy.newPostText = '';
+            stateCopy.postData.push(newPost);
+            return stateCopy;
         }
         case POST_TEXT_CHANGED: {
-            state.newPostText = action.newText;
-            break;
+            let stateCopy = {...state};
+            stateCopy.newPostText = action.newText;
+            return stateCopy;
         }
         default:
-            break;
+            return state;
     }
-
-    return state;
 }
 
 export const addPostActionCreator = () => ({type: ADD_POST});

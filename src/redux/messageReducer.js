@@ -62,30 +62,36 @@ let initialState = {
 };
 
 const messageReducer = (state = initialState, action) => {
+    
+
     switch (action.type) {
         case SEND_MESSAGE: {
-            let id = state.messageData.length;
+            let stateCopy = {...state};
+            stateCopy.messageData = [...state.messageData];
+            let id = stateCopy.messageData.length;
 
             let newMessage = {
                 id: ++id,
                 incoming: false,
-                text: state.newMessageText,
+                text: stateCopy.newMessageText,
                 senderImg:
                     'https://sun9-52.userapi.com/c852228/v852228024/8cdcb/X08CH8nHDN4.jpg'
             };
-            state.messageData.push(newMessage);
-            state.newMessageText = '';
-            break;
+            
+            stateCopy.messageData.push(newMessage);
+            stateCopy.newMessageText = '';
+            return stateCopy;
         }
         case MESSAGE_TEXT_CHANGED: {
-            state.newMessageText = action.newText;
-            break;
+            let stateCopy = {...state};
+            stateCopy.newMessageText = action.newText;
+            return stateCopy;
         }
         default:
-            break;
+            return state;
     }
 
-    return state;
+    
 }
 
 export const sendMessageActionCreator = () => ({type: SEND_MESSAGE});
