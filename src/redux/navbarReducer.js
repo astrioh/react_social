@@ -20,7 +20,7 @@ let initialState = {
 
 const navbarReducer = (state = initialState) => {
 
-    return Object.assign({}, state);
+    return {...state};
 }
 
 export default navbarReducer;
