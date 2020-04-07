@@ -5,6 +5,7 @@ const Settings = () => {
     return (
         <div>
             Settings
+            <h2>WORK IN PROGRESS...</h2>
         </div>
     );
 }

@@ -5,6 +5,7 @@ const Music = () => {
     return (
         <div>
             Music
+            <h2>WORK IN PROGRESS...</h2>
         </div>
     );
 }

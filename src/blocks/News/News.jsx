@@ -5,6 +5,7 @@ const News = () => {
     return (
         <div>
             News
+            <h2>WORK IN PROGRESS...</h2>
         </div>
     );
 }
