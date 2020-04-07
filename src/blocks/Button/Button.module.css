@@ -1,7 +1,6 @@
 .button {
     width: 160px;
     height: 54px;
-    border: none;
     border-radius: 5px;
     color: #fff;
     font-size: 18px;
@@ -13,4 +12,9 @@
     cursor: pointer;
     background-color: rgb(11, 158, 216);
     border: 3px solid rgb(108, 138, 236);
+}
+
+.medium {
+    width: 120px;
+    height: 34px;
 }

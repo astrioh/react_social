@@ -1,9 +1,9 @@
 .navbar {
-    height: 100%;
     grid-area: nav;
     background-color: rgb(78, 197, 245);
     border-radius: 5px;
     padding: 10px;
+    padding-bottom: 30px;
 }
   
 .navbar__menu {
@@ -23,7 +23,7 @@
 }
   
 .navbar__link {
-    padding: 15px 70px 15px 15px;
+    padding: 15px 0 15px 15px;
     text-decoration: none;
     color: rgb(0, 112, 156);
 }
